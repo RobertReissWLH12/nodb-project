@@ -51,13 +51,13 @@ export default class Holocron extends Component {
         return (
             <div className="holocron">
                 <h2>Holocron</h2>
-                {this.state.archives.map(el => (
+                {/* {this.props.archives.map(el => (
                     <Book
                     entryObj={el} key={el.id}
                     amendInfoFn={this.amendInfo}
                     destroyBookFn={this.destroyBook}
                     />
-                ))}
+                ))} */}
             </div>
         )
     }

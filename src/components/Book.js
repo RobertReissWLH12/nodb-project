@@ -10,4 +10,26 @@ export default class Book extends Component {
             characters: []
         }
     }
+
+    toggleEdit() {
+        this.setState({
+            editToggle: !this.state.editToggle
+        })
+            if (this.state.editToggle && this.state.entryInfo) {
+                this.props.amendInfoFn(this.props.entryObj.id,
+                    {title: this.state.title},
+                    {author: this.state.author},
+                    {pages: this.state.pages},
+                    {characters: this.state.characters})
+            }
+    }
+
+    render() {
+        return (
+            <book>
+                
+            </book>
+        )
+    }
+    
 }
