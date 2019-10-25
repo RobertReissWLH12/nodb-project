@@ -1,13 +1,13 @@
 import React, {Component} from 'react'
 import Book from './Book'
-import Axios from 'axios'
-// import axios from 'axios'
+import axios from 'axios'
 
 export default class Holocron extends Component {
     constructor() {
         super()
         this.state = {
-            book: []
+            // book: []
+            archives: []
         }
         this.amendInfo = this.amendInfo.bind(this)
         // this.amendTitle = this.amendTitle.bind(this)
@@ -19,16 +19,46 @@ export default class Holocron extends Component {
 
     componentDidMount() {
         axios
-        .get('/api/book')
+        .get('/api/archives')
         .then(res => {
             this.setState({
-                book: res.data
+                archives: res.data
             })
         })
     }
 
     amendInfo(id, body) {
         axios
-        .put(`./archives`)
+        .put(`./archives/${id}`, body)
+        .then(res => {
+            this.setState({
+                archives: res.data
+            })
+        })
+    }
+
+    destroyBook(id) {
+        axios
+        .delete(`/api/archives/${id}`
+        .then(res => {
+            this.setState({
+                archives: res.data
+            })
+        }))
+    }
+
+    render() {
+        return (
+            <div className="holocron">
+                <h2>Holocron</h2>
+                {this.state.archives.map(el => (
+                    <Book
+                    entryObj={el} key={el.id}
+                    amendInfoFn={this.amendInfo}
+                    destroyBookFn={this.destroyBook}
+                    />
+                ))}
+            </div>
+        )
     }
 }
