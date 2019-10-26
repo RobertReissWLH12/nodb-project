@@ -1,16 +1,18 @@
  [
     {
-        "id": 1,
+        "id": "0",
         "title": "Dawn of the Jedi: Into the Void",
         "author": {"first": "Tim", "last": "Lebbon" },
-        "pages": 320,
+        "image": "https://vignette.wikia.nocookie.net/starwars/images/6/6b/DawnoftheJedi-IntotheVoid-Hardcover.jpg/revision/latest/scale-to-width-down/500?cb=20130125030653",
+        "pages": "320",
         "characters": ["Lanoree Brock", "Dalien Brock", "Tre Sana", "Lorus"]
     },
     {
-        "id": 2,
+        "id": "1",
         "title": "Darth Plagueis",
         "author": {"first": "James", "last": "Luceno" },
-        "pages": 379,
+        "image": "https://vignette.wikia.nocookie.net/starwars/images/0/05/Darthplagueis-cover.jpg/revision/latest/scale-to-width-down/499?cb=20110713215940",
+        "pages": "379",
         "characters": ["Darth Plagueis", "Sheev Palpatine", "Darth Maul", "Padme Amidala", "Obi-Wan Kenobi", "Qui-Gon Jinn"]
     }
 ]

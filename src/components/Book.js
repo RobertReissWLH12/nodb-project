@@ -4,10 +4,13 @@ export default class Book extends Component {
     constructor() {
         super()
         this.state = {
+            id: 0,
             title: '',
             author: '',
             pages: 0,
-            characters: []
+            characters: [],
+            editToggle: false,
+            destroyToggle: false
         }
     }
 
@@ -16,19 +19,31 @@ export default class Book extends Component {
             editToggle: !this.state.editToggle
         })
             if (this.state.editToggle && this.state.entryInfo) {
-                this.props.amendInfoFn(this.props.entryObj.id,
+                this.props.amendInfoFn(this.props.characters.id,
                     {title: this.state.title},
-                    {author: this.state.author},
-                    {pages: this.state.pages},
-                    {characters: this.state.characters})
+                    )
             }
+    }
+
+    toggleDelete() {
+        this.setState({
+            destroyToggle: !this.state.destroyToggle
+        })
+        if (this.state.destroyToggle && this.state.characters) {
+            this.props.destroyBookFn(this.props.id)
+        }
     }
 
     render() {
         return (
-            <book>
-                
-            </book>
+            <div>
+                <div>
+                     <button onClick={() => this.destroyBook(this.props.id)}>Destroy This Entry!</button>
+                </div>
+                <div>
+                    {/* <button onClick={() => this.}>edit</button> */}
+                </div>
+            </div>
         )
     }
     

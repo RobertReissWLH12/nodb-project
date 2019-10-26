@@ -2,7 +2,8 @@ import React, {Component} from 'react';
 import './App.css';
 import Header from './components/Header'
 import Holocron from './components/Holocron'
-import archives from './Archives.json'
+import axios from 'axios'
+// import archives from './archives.json'
 
 export default class App extends Component {
   constructor() {
@@ -10,10 +11,21 @@ export default class App extends Component {
 
     this.state = {
       searchTerm: '',
-      archives: []
+      archives: [],
+      newBooks: []
     }
     this.handleChange = this.handleChange.bind(this)
   }
+
+  componentDidMount() {
+    axios
+    .get('/api/archives')
+    .then(res => {
+        this.setState({
+            archives: res.data
+        })
+    })
+}
 
   handleChange(e) {
     console.log(e.target.value);
@@ -26,10 +38,10 @@ export default class App extends Component {
 
      var update = () => {
 
-          let filteredResults = archives.filter(entry => entry.title.toLowerCase().includes(this.state.searchTerm.toLowerCase()))
+          let filteredResults = this.state.archives.filter(entry => entry.title.toLowerCase().includes(this.state.searchTerm.toLowerCase()))
           console.log(filteredResults)
           this.setState({
-            archives: filteredResults
+            newBooks: filteredResults
           })
         }
 
@@ -43,10 +55,14 @@ export default class App extends Component {
         <Header 
         handleChange = {this.handleChange}
         />
-        <Holocron 
-        searchTerm = {this.state.searchTerm}
-        archives = {this.state.archives}
+        {this.state.newBooks.map(el => (
+        <Holocron
+        // searchTerm = {this.state.searchTerm}
+        // archives = {this.state.archives}
+        key={el.id}
+        data={el}
         />
+        ))}
       </div>
     );
   }

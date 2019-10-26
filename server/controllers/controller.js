@@ -1,7 +1,7 @@
-const books = []
-let id = 0
+const books = require("./archives.json")
+let id = 2
 
-const {data} = require("../../src/Archives")
+// const {data} = require("../../src/Archives")
 
 // FOR EDITING THE BOOKS LATER!!  DON'T FORGET TO MOVE THIS!!
 // book[index] = {}
@@ -9,25 +9,27 @@ const {data} = require("../../src/Archives")
 
 module.exports = {
     chronicle: (req, res) => {
-        const newManuscript = {...req.body, id}
-        archivesLibrary.push(newBook)
+        const newBook = {...req.body, id}
+        books.push(newBook)
         id++
-        res.status(200).send(archivesLibrary)
+        res.status(200).send(books)
     },
     accessArchives: (req, res) => {
-        res.status(200).send(archivesLibrary)
+        res.status(200).send(books)
     },
     amend: (req, res) => {
         const {id} = req.params
-        const {info} = req.body
-        const index = archivesLibrary.findIndex(el => el.id === +id)
-        archivesLibrary[index].entry = entry
-        res.status(200).send(archivesLibrary)
+        console.log(req.params)
+        req.body = {...req.body, id}
+        console.log(req.body)
+        const index = books.findIndex(el => el.id === +id)
+        books[index] = req.body
+        res.status(200).send(books)
     },
     destroy: (req, res) => {
         const {id} = req.params
-        const index = archivesLibrary.findIndex(el => el.id === +id)
-        archivesLibrary.splice(index, 1)
-        res.status(200).send(archivesLibrary)
+        const index = books.findIndex(el => el.id === +id)
+        books.splice(index, 1)
+        res.status(200).send(books)
     }
 }

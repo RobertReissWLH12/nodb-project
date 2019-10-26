@@ -29,7 +29,7 @@ export default class Holocron extends Component {
 
     amendInfo(id, body) {
         axios
-        .put(`./archives/${id}`, body)
+        .put(`/api/archives/${id}`, body)
         .then(res => {
             this.setState({
                 archives: res.data
@@ -50,7 +50,6 @@ export default class Holocron extends Component {
     render() {
         return (
             <div className="holocron">
-                <h2>Holocron</h2>
                 {/* {this.props.archives.map(el => (
                     <Book
                     entryObj={el} key={el.id}
@@ -58,6 +57,16 @@ export default class Holocron extends Component {
                     destroyBookFn={this.destroyBook}
                     />
                 ))} */}
+                <p>
+                {this.props.data.title},
+                {/* {this.props.data.author}] */}
+                {/* {this.props.data.pages}, */}
+                {/* {this.props.data.characters} */}
+                </p>
+                {/* <img src={this.props.data.image} alt=""/> */}
+                <Book amendInfoFn={this.amendInfo}
+                destroyBookFn={this.destroyBook}
+                />
             </div>
         )
     }
