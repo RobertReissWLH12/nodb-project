@@ -41,7 +41,7 @@ export default class Book extends Component {
                      <button onClick={() => this.destroyBook(this.props.id)}>Destroy This Entry!</button>
                 </div>
                 <div>
-                    {/* <button onClick={() => this.}>edit</button> */}
+                    <button onClick={() => this.amendInfo(this.props.id)}>Amend This Entry</button>
                 </div>
             </div>
         )

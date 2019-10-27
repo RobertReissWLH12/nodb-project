@@ -14,5 +14,197 @@
         "image": "https://vignette.wikia.nocookie.net/starwars/images/0/05/Darthplagueis-cover.jpg/revision/latest/scale-to-width-down/499?cb=20110713215940",
         "pages": "379",
         "characters": ["Darth Plagueis", "Sheev Palpatine", "Darth Maul", "Padme Amidala", "Obi-Wan Kenobi", "Qui-Gon Jinn"]
+    },
+    {
+        "id": "2",
+        "title": "The Old Republic: Revan",
+        "author": {"first": "Drew", "last": "Karpyshyn" },
+        "image": "https://vignette.wikia.nocookie.net/starwars/images/6/63/TOR-Revan.jpg/revision/latest/scale-to-width-down/500?cb=20110728211622",
+        "pages": "298",
+        "characters": ["Revan", "Bastila Shan", "Canderous Ordo", "Lord Scourge", "Darth Nyriss", "Darth Xedrix"]
+    },
+    {
+        "id": "3",
+        "title": "Maul: Lockdown",
+        "author": {"first": "Joe", "last": "Schreiber" },
+        "image": "https://vignette.wikia.nocookie.net/starwars/images/d/dc/MaulLockdownCover.jpg/revision/latest/scale-to-width-down/499?cb=20130427064638",
+        "pages": "368",
+        "characters": ["Darth Maul", "Darth Sidious", "Darth Plagueis", "Artagan Truax", "Iram Radique", "Sadiki Blirr"]
+    },
+    {
+        "id": "4",
+        "title": "The Old Republic: Deceived",
+        "author": {"first": "Paul S.", "last": "Kemp" },
+        "image": "https://vignette.wikia.nocookie.net/starwars/images/c/cd/Swtor_deceived_cover.jpg/revision/latest/scale-to-width-down/500?cb=20100715022755",
+        "pages": "285",
+        "characters": ["Lord Malgus", "Lord Adraas", "Ven Zallow", "Vrath Xizor", "Aryn Leneer"]
+    },
+    {
+        "id": "5",
+        "title": "Red Harvest",
+        "author": {"first": "Joe", "last": "Schreiber" },
+        "image": "https://vignette.wikia.nocookie.net/starwars/images/8/8d/Redharvest.jpg/revision/latest/scale-to-width-down/500?cb=20101005040707",
+        "pages": "256",
+        "characters": ["Darth Scabrous", "Tulkh", "Dranok", "Rojo Trace", "Rance Lussk", "Hartwig"]
+    },
+    {
+        "id": "6",
+        "title": "The Old Republic: Fatal Alliance",
+        "author": {"first": "Sean", "last": "Williams" },
+        "image": "https://vignette.wikia.nocookie.net/starwars/images/b/bc/TORFACover.jpg/revision/latest/scale-to-width-down/500?cb=20100522044408",
+        "pages": "429",
+        "characters": ["Dao Stryver", "Darth Chratis", "Eldon Ax", "Jet Nebula", "Satele Shan", "Shigar Konshi"]
+    },
+    {
+        "id": "7",
+        "title": "The Old Republic: Annihilation",
+        "author": {"first": "Drew", "last": "Karpyshyn" },
+        "image": "https://vignette.wikia.nocookie.net/starwars/images/a/a3/AnnihilationCover.jpg/revision/latest/scale-to-width-down/500?cb=20120601025557",
+        "pages": "336",
+        "characters": ["Marcus Trant", "Theron Shan", "Darth Karrid", "Darth Marr", "Jace Malcom"]
+    },
+    {
+        "id": "8",
+        "title": "Darth Bane: Path of Destruction",
+        "author": {"first": "Drew", "last": "Karpyshyn" },
+        "image": "https://vignette.wikia.nocookie.net/starwars/images/9/9b/Path-of-destruction.jpg/revision/latest/scale-to-width-down/500?cb=20070719033113",
+        "pages": "324",
+        "characters": ["Darth Bane", "Sirak", "Zannah", "Githany"]
+    },
+    {
+        "id": "9",
+        "title": "Darth Bane: Rule of Two",
+        "author": {"first": "Drew", "last": "Karpyshyn" },
+        "image": "https://vignette.wikia.nocookie.net/starwars/images/1/13/RuleofTwo.jpg/revision/latest/scale-to-width-down/500?cb=20081021130617",
+        "pages": "318",
+        "characters": ["Darth Bane", "Darth Zannah", "Darovit", "Bordon", "Orten Ledes"]
+    },
+    {
+        "id": "10",
+        "title": "Darth Bane: Dynasty of Evil",
+        "author": {"first": "Drew", "last": "Karpyshyn" },
+        "image": "https://vignette.wikia.nocookie.net/starwars/images/1/1c/Dynasty_of_Evil.jpg/revision/latest/scale-to-width-down/499?cb=20090418194005",
+        "pages": "296",
+        "characters": ["Darth Bane", "Darth Zannah", "The Huntress", "Lucia", "Set Harth"]
+    },
+    {
+        "id": "11",
+        "title": "Episode I: The Phantom Menace",
+        "author": {"first": "Terry", "last": "Brooks" },
+        "image": "https://vignette.wikia.nocookie.net/starwars/images/3/38/Ep1_Maul.jpg/revision/latest/scale-to-width-down/318?cb=20060924152558",
+        "pages": "324",
+        "characters": ["Qui-Gon Jinn", "Obi-Wan Kenobi", "Padme Amidala", "Anakin Skywalker", "Darth Sidious", "Darth Maul", "Watto", "Nute Gunray", "Mace Windu", "Yoda", "C-3PO", "R2-D2"]
+    },
+    {
+        "id": "12",
+        "title": "Episode II: Attack of the Clones",
+        "author": {"first": "R.A.", "last": "Salvatore" },
+        "image": "https://vignette.wikia.nocookie.net/starwars/images/3/3a/Attack_of_the_Clones_Cover.jpg/revision/latest?cb=20050501172807",
+        "pages": "336",
+        "characters": ["Obi-Wan Kenobi", "Padme Amidala", "Anakin Skywalker", "Jango Fett", "Darth Sidious", "Count Dooku", "Nute Gunray", "Poggle the Lesser", "Yoda", "Mace Windu", "C-3PO", "R2-D2"]
+    },
+    {
+        "id": "13",
+        "title": "Episode III: Revenge of the Sith",
+        "author": {"first": "Matthew", "last": "Stover" },
+        "image": "https://vignette.wikia.nocookie.net/starwars/images/8/88/RevengeOfTheSithNovel.jpg/revision/latest/scale-to-width-down/500?cb=20070917191944",
+        "pages": "418",
+        "characters": ["Obi-Wan Kenobi", "Padme Amidala", "Anakin Skywalker", "General Grievous", "Darth Sidious", "Count Dooku", "Yoda", "Mace Windu", "C-3PO", "R2-D2"]
+    },
+    {
+        "id": "14",
+        "title": "Labyrinth of Evil",
+        "author": {"first": "James", "last": "Luceno" },
+        "image": "https://vignette.wikia.nocookie.net/starwars/images/6/63/Labyrinth_of_Evil_Cover.jpg/revision/latest/scale-to-width-down/500?cb=20070719042702",
+        "pages": "362",
+        "characters": ["Obi-Wan Kenobi", "Padme Amidala", "Anakin Skywalker", "General Grievous", "Darth Sidious", "Ki-Adi-Mundi", "Count Dooku", "Nute Gunray", "Yoda", "C-3PO", "R2-D2"]
+    },
+    {
+        "id": "15",
+        "title": "Outbound Flight",
+        "author": {"first": "Timothy", "last": "Zahn" },
+        "image": "https://vignette.wikia.nocookie.net/starwars/images/6/65/OutboundFlight-HardcoverFront.jpg/revision/latest/scale-to-width-down/499?cb=20070719035343",
+        "pages": "362",
+        "characters": ["Obi-Wan Kenobi", "Jorus C'Baoth", "Anakin Skywalker", "Dean Jinzler", "Mace Windu", "Siv Kav"]
+    },
+    {
+        "id": "16",
+        "title": "Kenobi",
+        "author": {"first": "John Jackson", "last": "Miller" },
+        "image": "https://vignette.wikia.nocookie.net/starwars/images/8/82/Swkenobi.jpg/revision/latest/scale-to-width-down/499?cb=20130720183933",
+        "pages": "400",
+        "characters": ["Ben Kenobi", "Annileen Calwell", "Orrin Gault", "A'Yark", "Wyle Ulbreck"]
+    },
+    {
+        "id": "17",
+        "title": "Episode IV: A New Hope",
+        "author": {"first": "George", "last": "Lucas" },
+        "image": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1408936775l/599090.jpg",
+        "pages": "418",
+        "characters": ["Luke Skywalker", "Leia Organa", "Han Solo", "Darth Vader", "Obi-Wan Kenobi", "Chewbacca", "C-3PO", "R2-D2"]
+    },
+    {
+        "id": "18",
+        "title": "Episode V: The Empire Strikes Back",
+        "author": {"first": "George", "last": "Lucas" },
+        "image": "https://vignette.wikia.nocookie.net/starwars/images/8/80/Episodev_empirestrikesback.jpg/revision/latest/scale-to-width-down/299?cb=20101210203245",
+        "pages": "224",
+        "characters": ["Luke Skywalker", "Leia Organa", "Han Solo", "Darth Vader", "Obi-Wan Kenobi", "Chewbacca", "Yoda", "Lando Calrissian", "Boba Fett", "C-3PO", "R2-D2"]
+    },
+    {
+        "id": "19",
+        "title": "Episode VI: The Return of the Jedi",
+        "author": {"first": "George", "last": "Lucas" },
+        "image": "http://prodimage.images-bn.com/pimages/9781599617053_p0_v1_s1200x630.jpg",
+        "pages": "192",
+        "characters": ["Luke Skywalker", "Leia Organa", "Han Solo", "Darth Vader", "Emperor Palpatine", "Obi-Wan Kenobi", "Chewbacca", "Yoda", "Lando Calrissian", "Wicket", "Boba Fett", "Jabba the Hutt", "C-3PO", "R2-D2"]
+    },
+    {
+        "id": "20",
+        "title": "Shadows of the Empire",
+        "author": {"first": "Steve", "last": "Perry" },
+        "image": "https://vignette.wikia.nocookie.net/starwars/images/9/92/Shadowsnovel.jpg/revision/latest/scale-to-width-down/500?cb=20070914210621",
+        "pages": "385",
+        "characters": ["Luke Skywalker", "Leia Organa", "Darth Vader", "Emperor Palpatine", "Prince Xizor", "Chewbacca", "Lando Calrissian", "C-3PO", "R2-D2"]
+    },
+    {
+        "id": "21",
+        "title": "Scoundrels",
+        "author": {"first": "Timothy", "last": "Zahn" },
+        "image": "https://vignette.wikia.nocookie.net/starwars/images/4/44/ScoundrelsCover.jpg/revision/latest/scale-to-width-down/499?cb=20120323024348",
+        "pages": "385",
+        "characters": ["Han Solo", "Chewbacca", "Lando Calrissian", "Boba Fett"]
+    },
+    {
+        "id": "22",
+        "title": "Heir to the Empire",
+        "author": {"first": "Timothy", "last": "Zahn" },
+        "image": "https://vignette.wikia.nocookie.net/starwars/images/8/82/HeirtotheEmpire.jpg/revision/latest?cb=20190907010055",
+        "pages": "368",
+        "characters": ["Luke Skywalker", "Leia Organa Solo", "Han Solo", "Grand Admiral Thrawn", "Captain Pellaeon", "Joruus C'baoth", "Talon Karrde", "Mara Jade", "Chewbacca", "Lando Calrissian", "C-3PO", "R2-D2"]
+    },
+    {
+        "id": "23",
+        "title": "Dark Force Rising",
+        "author": {"first": "Timothy", "last": "Zahn" },
+        "image": "https://vignette.wikia.nocookie.net/starwars/images/6/66/Darkforcerising.jpg/revision/latest/scale-to-width-down/308?cb=20110127115357",
+        "pages": "376",
+        "characters": ["Luke Skywalker", "Leia Organa Solo", "Han Solo", "Grand Admiral Thrawn", "Captain Pellaeon", "Joruus C'baoth", "Talon Karrde", "Mara Jade", "Chewbacca", "Lando Calrissian", "C-3PO", "R2-D2"]
+    },
+    {
+        "id": "24",
+        "title": "The Last Command",
+        "author": {"first": "Timothy", "last": "Zahn" },
+        "image": "https://vignette.wikia.nocookie.net/starwars/images/f/f6/Tlc.jpg/revision/latest/scale-to-width-down/301?cb=20060429041032",
+        "pages": "376",
+        "characters": ["Luke Skywalker", "Leia Organa Solo", "Han Solo", "Grand Admiral Thrawn", "Captain Pellaeon", "Joruus C'baoth", "Talon Karrde", "Mara Jade", "Chewbacca", "Lando Calrissian", "C-3PO", "R2-D2"]
+    },
+    {
+        "id": "25",
+        "title": "Death Troopers",
+        "author": {"first": "Joe", "last": "Schreiber" },
+        "image": "https://vignette.wikia.nocookie.net/starwars/images/8/80/Deathtroopers.jpg/revision/latest/scale-to-width-down/500?cb=20090416154756",
+        "pages": "265",
+        "characters": ["Aur Myss", "Jareth Sartoris", "Han Solo", "Chewbacca", "Kale Longo", "Trig Longo"]
     }
 ]

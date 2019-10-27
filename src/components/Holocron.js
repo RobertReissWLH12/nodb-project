@@ -63,7 +63,7 @@ export default class Holocron extends Component {
                 {/* {this.props.data.pages}, */}
                 {/* {this.props.data.characters} */}
                 </p>
-                {/* <img src={this.props.data.image} alt=""/> */}
+                <img src={this.props.data.image} alt=""/>
                 <Book amendInfoFn={this.amendInfo}
                 destroyBookFn={this.destroyBook}
                 />
