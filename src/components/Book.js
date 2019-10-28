@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+// import axios from 'axios'
 
 export default class Book extends Component {
     constructor() {
@@ -9,6 +10,7 @@ export default class Book extends Component {
             author: '',
             pages: 0,
             characters: [],
+            img: '',
             editToggle: false,
             destroyToggle: false
         }
@@ -25,23 +27,26 @@ export default class Book extends Component {
             }
     }
 
-    toggleDelete() {
-        this.setState({
-            destroyToggle: !this.state.destroyToggle
-        })
-        if (this.state.destroyToggle && this.state.characters) {
-            this.props.destroyBookFn(this.props.id)
-        }
-    }
+    // destroyBook = () => {
+    //     console.log(this.state.id)
+    //     alert("Button Clicked!")
+    //     // this.setState({
+    //     //     destroyToggle: !this.state.destroyToggle
+    //     // })
+    //     // if (this.state.destroyToggle && this.state.characters) {
+    //     //     this.props.destroyBook(this.props.id)
+    //     // }
+    // }
 
     render() {
+        
         return (
             <div>
                 <div>
-                     <button onClick={() => this.destroyBook(this.props.id)}>Destroy This Entry!</button>
+                     <button onClick={() => this.props.destroyBook(this.props.id)}>Destroy This Entry!</button>
                 </div>
                 <div>
-                    <button onClick={() => this.amendInfo(this.props.id)}>Amend This Entry</button>
+                    <button onClick={() => this.props.amendInfo(this.props.id, this.props.title)}>Amend This Entry</button>
                 </div>
             </div>
         )

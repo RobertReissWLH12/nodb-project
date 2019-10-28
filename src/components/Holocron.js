@@ -7,7 +7,12 @@ export default class Holocron extends Component {
         super()
         this.state = {
             // book: []
-            archives: []
+            archives: [],
+            // title: '',
+            // author: '',
+            // pages: 0,
+            // characters: [],
+            // img: ''
         }
         this.amendInfo = this.amendInfo.bind(this)
         // this.amendTitle = this.amendTitle.bind(this)
@@ -37,35 +42,47 @@ export default class Holocron extends Component {
         })
     }
 
-    destroyBook(id) {
+    destroyBook(id, title) {
+        console.log(id, title)
+        alert("Button Clicked!")
         axios
-        .delete(`/api/archives/${id}`
+        .delete(`/api/archives/${id}`, {id, title})
         .then(res => {
             this.setState({
                 archives: res.data
             })
-        }))
+        })
     }
 
+    // destroyBook = () => {
+    //     console.log(this.state.id)
+    //     alert("Button Clicked!")
+        // this.setState({
+        //     destroyToggle: !this.state.destroyToggle
+        // })
+        // if (this.state.destroyToggle && this.state.characters) {
+        //     this.props.destroyBook(this.props.id)
+        // }
+    // }
+
     render() {
+        console.log(this.state)
         return (
             <div className="holocron">
                 {/* {this.props.archives.map(el => (
                     <Book
                     entryObj={el} key={el.id}
                     amendInfoFn={this.amendInfo}
-                    destroyBookFn={this.destroyBook}
+                    destroyBook={this.destroyBook}
                     />
                 ))} */}
-                <p>
-                {this.props.data.title},
-                {/* {this.props.data.author}] */}
-                {/* {this.props.data.pages}, */}
-                {/* {this.props.data.characters} */}
-                </p>
-                <img src={this.props.data.image} alt=""/>
+                <div>Title: {this.props.data.title}</div>
+                {/* <div>Author: {this.props.data.author}</div> */}
+                {/* <div>Pages: {this.props.data.pages}</div> */}
+                {/* <div>Major Characters: {this.props.data.characters}</div> */}
+                <img src={this.props.data.image} alt="" className="searchImage"/>
                 <Book amendInfoFn={this.amendInfo}
-                destroyBookFn={this.destroyBook}
+                destroyBook={this.destroyBook}
                 />
             </div>
         )

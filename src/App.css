@@ -1,9 +1,89 @@
 * {
   margin: 0;
+  
 }
+
+html {
+  background: url("https://www.highreshdwallpapers.com/wp-content/uploads/2012/07/Jedi-VS-Sith-Wallpaper.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;  
+}
+
+/* body{
+  width: 76vw;
+} */
 
 .page-title {
   text-align: center;
   display: block;
+  color: rgb(200, 198, 27);
   font-size: 100px;
+  letter-spacing: 5px;
+  font-family: 'Bangers', cursive;
+}
+
+.find-entry {
+  left: 41%;
+  top: 20%;
+  font-size: 20px;
+  position: absolute;
+}
+
+.newEntry {
+  text-align: center;
+  padding: 55px 30px 30px 30px;
+  font-size: 40px;
+  color: rgb(200, 198, 27);
+}
+
+.big-container {
+  display: flex;
+  justify-content: center;
+  color: rgb(200, 198, 27);
+}
+
+.input-field {
+  /* margin: 0px; */
+  /* position: relative; */
+  /* display: inline-block; */
+  justify-content: space-between;
+  flex-direction: row;
+  /* left: 30%; */
+  font-size: 24px;
+  color: rgb(200, 198, 27);
+}
+
+.btn-submit {
+  left: 44%;
+  top: 47%;
+  position: absolute;
+}
+
+.holocron {
+  color: #fff;
+  font-size: 40px;
+  top: 60%;
+  position: relative;
+  font-family: 'Electrolize', sans-serif;
+  flex-direction: row;
+  text-align: center;
+}
+
+.relevant-entries {
+  color: rgb(0, 131, 102);  
+  /* text-align: center; */
+  top: 52%;
+  left: 40.5%;
+  position: absolute;
+  font-size: 36px;
+}
+
+.searchImage {
+  max-width: 200px;
+  max-height: auto;
+  box-sizing: border-box;
+  flex-direction: row;
+
 }
