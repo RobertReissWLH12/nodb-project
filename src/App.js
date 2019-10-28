@@ -3,6 +3,8 @@ import './App.css';
 import Header from './components/Header'
 import Holocron from './components/Holocron'
 import axios from 'axios'
+import R2beam from './R2-beam.png'
+
 // import archives from './archives.json'
 
 export default class App extends Component {
@@ -58,6 +60,7 @@ export default class App extends Component {
         <Header 
         handleChange = {this.handleChange}
         />
+          <img src={R2beam} className="R2-beam" alt="" />
         {this.state.newBooks.map(el => (
         <Holocron
         // searchTerm = {this.state.searchTerm}
