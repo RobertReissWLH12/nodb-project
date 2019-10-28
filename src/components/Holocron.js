@@ -45,7 +45,7 @@ export default class Holocron extends Component {
                 archives: res.data,
                 editToggle: false
             })
-        })
+        }).catch(console.log("err"))
     }
 
     toggleEdit() {
@@ -66,28 +66,28 @@ export default class Holocron extends Component {
         })
     }
 
-    destroyBook(id, title) {
-        console.log(id, title)
-        alert("Button Clicked!")
+    destroyBook(id) {
+        console.log(id)
         axios
-        .delete(`/api/archives/${id}`, {id, title})
+        .delete(`/api/archives/${id}`)
         .then(res => {
+            this.props.updateArray(res.data)
             this.setState({
                 archives: res.data
             })
-        })
+        }).catch(console.log("err"))
     }
 
-    destroyBook = () => {
-        console.log(this.state.id)
-        alert("Button Clicked!")
-        this.setState({
-            destroyToggle: !this.state.destroyToggle
-        })
-        if (this.state.destroyToggle && this.state.characters) {
-            this.props.destroyBook(this.props.id)
-        }
-    }
+    // destroyBook = () => {
+    //     console.log(this.state.id)
+    //     alert("Button Clicked!")
+    //     this.setState({
+    //         destroyToggle: !this.state.destroyToggle
+    //     })
+    //     if (this.state.destroyToggle && this.state.characters) {
+    //         this.props.destroyBook(this.props.id)
+    //     }
+    // }
 
     render() {
         // characters.map(this.props.data.characters)

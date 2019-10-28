@@ -76,10 +76,6 @@ html {
   text-align: center;
 }
 
-.book-title {
-  padding-top: 100px;
-}
-
 .searchImage {
   max-width: 100px;
   max-height: auto;
@@ -93,7 +89,7 @@ html {
   color: rgb(0, 131, 102);  
   /* text-align: center; */
   top: 52%;
-  left: 40.5%;
+  left: 25%;
   position: absolute;
   font-size: 36px;
 }

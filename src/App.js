@@ -42,11 +42,7 @@ export default class App extends Component {
         searchTerm: e.target.value
       }, 
       
-      () => update())
-
-
-            
-      
+      () => update())      
   }
 
     updateArray(arr){

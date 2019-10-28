@@ -28,7 +28,7 @@ module.exports = {
     },
     destroy: (req, res) => {
         const {id} = req.params
-        const index = books.findIndex(el => el.id === +id)
+        const index = books.findIndex(el => el.id === id)
         books.splice(index, 1)
         res.status(200).send(books)
     }
