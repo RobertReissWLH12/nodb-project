@@ -1,5 +1,5 @@
 const books = require("./archives.json")
-let id = 2
+// let id = 2
 
 // const {data} = require("../../src/Archives")
 
@@ -20,10 +20,10 @@ module.exports = {
     amend: (req, res) => {
         const {id} = req.params
         console.log(req.params)
-        req.body = {...req.body, id}
         console.log(req.body)
-        const index = books.findIndex(el => el.id === +id)
-        books[index] = req.body
+        const index = books.findIndex(el => el.id === id)
+        console.log(index)
+        books[index].title = req.body.title
         res.status(200).send(books)
     },
     destroy: (req, res) => {

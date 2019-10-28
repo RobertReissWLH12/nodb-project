@@ -15,6 +15,7 @@ export default class App extends Component {
       newBooks: []
     }
     this.handleChange = this.handleChange.bind(this)
+    this.updateArray = this.updateArray.bind(this)
   }
 
   componentDidMount() {
@@ -29,25 +30,31 @@ export default class App extends Component {
 
   handleChange(e) {
     console.log(e.target.value);
+    let update = () => {
+         let filteredResults = this.state.archives.filter(entry => entry.title.toLowerCase().includes(this.state.searchTerm.toLowerCase()))
+         console.log(filteredResults)
+         this.setState({
+           newBooks: filteredResults
+         })
+       }
     
       this.setState({
         searchTerm: e.target.value
       }, 
       
-      () => update());
+      () => update())
 
-     var update = () => {
 
-          let filteredResults = this.state.archives.filter(entry => entry.title.toLowerCase().includes(this.state.searchTerm.toLowerCase()))
-          console.log(filteredResults)
-          this.setState({
-            newBooks: filteredResults
-          })
-        }
-
-        
+            
       
   }
+
+    updateArray(arr){
+      this.setState({
+        newBooks: arr
+      })
+    }
+
 
   render() {
     return (
@@ -60,7 +67,9 @@ export default class App extends Component {
         // searchTerm = {this.state.searchTerm}
         // archives = {this.state.archives}
         key={el.id}
+        id={el.id}
         data={el}
+        updateArray = {this.updateArray}
         />
         ))}
       </div>

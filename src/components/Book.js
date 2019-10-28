@@ -11,21 +11,11 @@ export default class Book extends Component {
             pages: 0,
             characters: [],
             img: '',
-            editToggle: false,
             destroyToggle: false
         }
     }
 
-    toggleEdit() {
-        this.setState({
-            editToggle: !this.state.editToggle
-        })
-            if (this.state.editToggle && this.state.entryInfo) {
-                this.props.amendInfoFn(this.props.characters.id,
-                    {title: this.state.title},
-                    )
-            }
-    }
+    
 
     // destroyBook = () => {
     //     console.log(this.state.id)
@@ -45,11 +35,11 @@ export default class Book extends Component {
                 <div>
                      <button onClick={() => this.props.destroyBook(this.props.id)}>Destroy This Entry!</button>
                 </div>
-                <div>
-                    <button onClick={() => this.props.amendInfo(this.props.id, this.props.title)}>Amend This Entry</button>
-                </div>
+                    {this.props.editToggle ? <button onClick={() => this.props.amendInfo(this.props.id, this.props.editedValue)}>Submit</button> : <button onClick={() => this.props.toggleEdit(this.props.id, this.props.title)}>Amend This Entry</button>}
             </div>
         )
     }
     
 }
+// onclick on submit button
+// invoke put request on function and pass through id and body
