@@ -70,11 +70,11 @@ export default class Header extends Component {
                             </div>
                             <div className="input-field4">
                                 <input type="text" name="characters" ref="characters" />
-                                <label htmlFor="characters">List of Major   Characters</label>
+                                <label htmlFor="characters">List of Major Characters</label>
                             </div>
                         </div>
                     </div>
-                    <input type="submit" value="Enter Into the Holocron" className="btn-submit" />
+                    <button onClick={this.chronicle()} value="Enter Into the Holocron" className="btn-submit">Enter Into the Holocron</button>
                 </form>
                 </nav>
                 <h2 className="relevant-entries">Relevant Entries</h2>
