@@ -93,10 +93,9 @@ export default class Holocron extends Component {
         // characters.map(this.props.data.characters)
         console.log(this.props.data.characters)
         return (
-            <div className="holocron">
-            <img src={this.props.data.image} alt="" className="searchImage"/>
+            <div className="results-container">
+            <div className="results-text">
                 {this.state.editToggle ? <input onChange={(ev) => this.handleChange(ev)} value={this.state.editedValue}></input> : <div className="book-title">{this.props.data.title}</div>}
-
                     <label for="">by:</label> 
                 <div>
                     {this.props.data.author.first} {this.props.data.author.last}
@@ -111,6 +110,10 @@ export default class Holocron extends Component {
                 editedValue={this.state.editedValue}
                 id={this.props.id}
                 />
+            </div>
+            <div>
+            <img src={this.props.data.image} className="results-image" alt="" className="searchImage"/>
+            </div>
             </div>
         )
     }

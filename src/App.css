@@ -13,6 +13,8 @@ html {
 
 .R2-beam {
   height: 300px;
+  position: fixed;
+  right: 97px;
 }
 
 /* body{
@@ -69,7 +71,17 @@ html {
   position: absolute;
 }
 
-.holocron {
+.results-container {
+  max-width: 700px;
+  /* border: solid yellow; */
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.results-text {
   color: #fff;
   font-size: 25px;
   /* top: 50%; */
@@ -80,8 +92,10 @@ html {
   text-align: center;
 }
 
+
+
 .searchImage {
-  max-width: 100px;
+  max-width: 150px;
   max-height: auto;
   box-sizing: border-box;
   /* margin-left: 500px; */
