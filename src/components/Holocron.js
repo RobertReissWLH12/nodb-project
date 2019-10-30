@@ -112,7 +112,7 @@ export default class Holocron extends Component {
                 />
             </div>
             <div>
-            <img src={this.props.data.image} className="results-image" alt="" className="searchImage"/>
+            <img src={this.props.data.image} className="results-image" alt=""/>
             </div>
             </div>
         )

@@ -1,0 +1,6 @@
+-- CREATE TABLE
+-- id
+-- title
+-- image
+-- pages
+-- characters
